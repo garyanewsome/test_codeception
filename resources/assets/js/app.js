@@ -13,9 +13,6 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-
-const app = new Vue({
-    el: '#app'
-});
-
+window.moment = require('moment');
+require('cornerstone-event-components/dist/commons');
+require('cornerstone-event-components/dist/dates.component');
