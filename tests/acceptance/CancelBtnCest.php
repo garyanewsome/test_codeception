@@ -18,7 +18,7 @@ class CancelBtnCest
         $I->wantTo('Click React input box and then click Cancel button');
         $I->amOnPage('/');
         $I->see('Laravel');
-        $I->seeElement('input', ['value' => '01/01/2018 2:46 PM']);
+        $I->seeElement('input', ['value' => '01/01/2018']);
 
         // $els = $this->getModule('WebDriver')->_findElements('input');
         

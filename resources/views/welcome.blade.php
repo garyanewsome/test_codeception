@@ -7,10 +7,7 @@
 
         <title>Laravel</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.12/vue.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
