@@ -7,7 +7,7 @@
 
         <title>Laravel</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -85,7 +85,7 @@
             <h3 class="flex-center">Vue.js Component</h3>
             <h4 class="flex-center">Write Something Below This Headline</h4>
             <div id="writeToDiv" class="flex-center bordered">
-                @{{ msg }}
+                <h1>@{{ msg }}</h1>
             </div>
         </div>
 

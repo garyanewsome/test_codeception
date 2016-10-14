@@ -28,7 +28,7 @@ require('cornerstone-event-components/dist/dates.component');
 var writeToDiv = new Vue({
   el: '#writeToDiv',
   data: {
-    msg: 'Hello Vue!'
+    msg: 'Hello Vue you beautiful thing you!'
   }
 })
 
