@@ -33,6 +33,7 @@ Example test can be found at `tests/acceptance/CancelBtnCest.php`
 ###### To run the test
 Start PhantomJS
 - `phantomjs --webdriver=4444` <-- starts phantomjs on port 4444
+
 Run Codeception Test
 - `composer exec codecept run tests/acceptance/CancelBtnCest.php`
 
