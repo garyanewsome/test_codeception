@@ -64,14 +64,32 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .bordered {
+                margin: 1em;
+                padding: 0.25em;
+                border: 1px solid black;
+            }
         </style>
     </head>
     <body>
 
-        <h3 class="flex-center">Body Snatchers / Codeception Test</h3>
-        <div class='flex-center bordered'>
-            <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='/saveThings/index.json' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+        <div class="bordered">
+            <h3 class="flex-center">Body Snatchers / Codeception Test</h3>
+            <div class="flex-center">
+                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='/saveThings/index.json' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+            </div>
         </div>
+
+        <div class="bordered">
+            <h3 class="flex-center">Vue.js Component</h3>
+            <h4 class="flex-center">Write Something Below This Headline</h4>
+            <div id="writeToDiv" class="flex-center bordered">
+                @{{ msg }}
+            </div>
+        </div>
+
+        <div id="app"></div>
 
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
