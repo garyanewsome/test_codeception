@@ -26,7 +26,7 @@ It can be installed via download from their website, http://phantomjs.org/ or vi
 
 Change the `browser:` in your `acceptance.suite.yml` to `phantomjs`
 
-We used the `Cest` style test in this application, which you can generate with the `php codecept generate:cest suitename CestName` command.
+We used the `Cest` style test in this application, which you can generate with the `composer exec codecept generate:cest suitename CestName` command.
 
 Example test can be found at `tests/acceptance/CancelBtnCest.php`
 
