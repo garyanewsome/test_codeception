@@ -82,7 +82,7 @@
         </div>
 
         <div id="dates" class="bordered">
-            @{{date}}
+            @{{$date}}
 
             <br><br>
             <p>This is a test ->
