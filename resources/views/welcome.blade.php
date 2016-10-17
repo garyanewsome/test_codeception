@@ -91,13 +91,19 @@
 
         <div id="app"></div>
 
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                </div>
+        <div id="dates">
+            @if($date)
+                <ul>
+                    @foreach($date as $date)
+                        <li>{{$date->date}}</li>
+                    @endforeach
+                </ul>
+            @else
+                <p>No dates stored yet. Store some dates now.</p>
             @endif
+        </div>
+
+        <div class="flex-center position-ref full-height">
 
             <div class="content">
                 <div class="title m-b-md">
