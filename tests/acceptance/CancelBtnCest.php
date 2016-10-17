@@ -20,10 +20,7 @@ class CancelBtnCest
         $I->see('Laravel');
         $I->seeElement('input', ['value' => '01/01/2018']);
 
-        // $els = $this->getModule('WebDriver')->_findElements('input');
-        
-
-        // $I->click(input.first);
-        // $I->click('button' => 'Cancel');
+        $I->click('/html/body/div[1]/div/div/div/div[1]/input'); // xpath to first input box
+        $I->click('Cancel');
     }
 }
