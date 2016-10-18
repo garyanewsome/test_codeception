@@ -81,16 +81,30 @@
             </div>
         </div>
 
-        <div id="dates" class="bordered">
-            @{{$date}}
+        <div class="bordered">
+        {{ $date = }}
+        </div>
 
-            <br><br>
-            <p>This is a test ->
+        <div id="dates" class="bordered">
+            
+            @if($dates)
+                <ul>
+                    @foreach($dates as $date)
+                        <li>@{{$date}}</li>
+                    @endforeach
+                </ul>
+            @else
+                <p>No dates yet, add dates now.</p>
+            @endif
+            
+        </div>
+
+        <div class="bordered">    
+            <p>Vanilla PHP Test</p>
             <?php
                 $testDate = 'yup I am a test';
-                echo $testDate;
             ?>
-            </p>
+            <p>This is a test -> {{$testDate}}</p>
             <br>
         </div>
 

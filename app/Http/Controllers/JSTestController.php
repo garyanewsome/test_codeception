@@ -10,12 +10,17 @@ class JSTestController extends Controller
 {
   
   public function index(){
-    $date = array('testing 1, 2...');
-    return view('jstest', $date);
-  }  
-  
-  public function create(){
+    $dates = Input::all();
+    
+    return View::make('jstest', array('dates'=>$dates));
 
+  }
+
+  public function store(Request $request){
+    $params = $request->only(['date']);
+    $input = Input::create($params);
+
+    return Redirect::route('jstest.index');
   }
 
 }
