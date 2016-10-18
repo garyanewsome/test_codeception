@@ -77,7 +77,7 @@
         <div class="bordered">
             <h3 class="flex-center">Body Snatchers / Codeception Test - Storing Data</h3>
             <div class="flex-center">
-                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='$date' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='jstest' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
             </div>
         </div>
 

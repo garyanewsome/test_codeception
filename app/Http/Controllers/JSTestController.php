@@ -10,16 +10,12 @@ class JSTestController extends Controller
 {
   
   public function index(){
-    $date = array('testing 1, 2...');  
+    $date = array('testing 1, 2...');
     return view('jstest', $date);
-    
   }  
   
-  public function setDate(){
+  public function create(){
 
   }
 
-  public function getDate(){
-    
-  }
 }
