@@ -31,5 +31,3 @@ var writeToDiv = new Vue({
     msg: 'Hello Vue you beautiful thing you!'
   }
 })
-
-writeToDiv

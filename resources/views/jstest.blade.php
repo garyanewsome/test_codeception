@@ -82,11 +82,10 @@
         </div>
 
         <div class="bordered">
-        {{ $date = }}
         </div>
 
         <div id="dates" class="bordered">
-            
+
             @if($dates)
                 <ul>
                     @foreach($dates as $date)
@@ -96,10 +95,10 @@
             @else
                 <p>No dates yet, add dates now.</p>
             @endif
-            
+
         </div>
 
-        <div class="bordered">    
+        <div class="bordered">
             <p>Vanilla PHP Test</p>
             <?php
                 $testDate = 'yup I am a test';

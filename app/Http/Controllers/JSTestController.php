@@ -4,16 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
+use App\Date;
 
 class JSTestController extends Controller
 {
-  
-  public function index(){
-    $dates = Input::all();
-    
-    return View::make('jstest', array('dates'=>$dates));
 
+  public function index(Request $request){
+
+    $dates = Date::all();
+    return view('jstest',compact('title', 'dates'));
   }
 
   public function store(Request $request){
