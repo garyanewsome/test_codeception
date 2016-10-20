@@ -22,4 +22,11 @@ class JSTestController extends Controller
     return Redirect::route('jstest.index');
   }
 
+  public function update(Request $request, $jstest){
+    $date = Date::find($jstest);
+    $params = $request->only(['payload']);
+    // dd($date, $params);
+    $date->update(['created_at' => $params['payload']]);
+  }
+
 }

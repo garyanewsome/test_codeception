@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('jstest', 'JSTestController');
+Route::resource('jstest', 'JSTestController', ['only' => ['index']]);
+
+Route::post('jstest/{jstest}', 'JSTestController@update');

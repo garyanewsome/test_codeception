@@ -75,13 +75,10 @@
     <body>
 
         <div class="bordered">
-            <h3 class="flex-center">Body Snatchers / Codeception Test - Storing Data</h3>
+            <h3 class="flex-center">Body Snatchers / Codeception Test - Storing Data {{$dates[0]->created_at}}</h3>
             <div class="flex-center">
-                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='jstest' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+                <input class="eventDateHelper" name="test_date" value="{{$dates[0]->created_at}}" data-endpoint='/jstest/{{$dates[0]->id}}' data-dateformat="YYYY-MM-DD" data-timeformat="h:mm:s"/>
             </div>
-        </div>
-
-        <div class="bordered">
         </div>
 
         <div id="dates" class="bordered">
@@ -89,7 +86,7 @@
             @if($dates)
                 <ul>
                     @foreach($dates as $date)
-                        <li>@{{$date}}</li>
+                        <li>{{$date}}</li>
                     @endforeach
                 </ul>
             @else
