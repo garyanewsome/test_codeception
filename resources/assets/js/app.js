@@ -13,9 +13,21 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+window.Vue = require('vue')
+
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app'
 });
 
+window.moment = require('moment');
+require('cornerstone-event-components/dist/commons');
+require('cornerstone-event-components/dist/dates.component');
+
+var writeToDiv = new Vue({
+  el: '#writeToDiv',
+  data: {
+    msg: 'Hello Vue you beautiful thing you!'
+  }
+})

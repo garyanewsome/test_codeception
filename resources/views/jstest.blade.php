@@ -75,38 +75,35 @@
     <body>
 
         <div class="bordered">
-            <h3 class="flex-center">Body Snatchers / Codeception Test</h3>
+            <h3 class="flex-center">Body Snatchers / Codeception Test - Storing Data {{$dates[0]->created_at}}</h3>
             <div class="flex-center">
-                <input class="eventDateHelper" name="test_date" value="01/01/2018 2:46 PM" data-endpoint='/saveThings/index.json' data-dateformat="MM/DD/YYYY" data-timeformat="h:mm a"/>
+                <input class="eventDateHelper" name="test_date" value="{{$dates[0]->created_at}}" data-endpoint='/jstest/{{$dates[0]->id}}' data-dateformat="YYYY-MM-DD" data-timeformat="h:mm:s"/>
             </div>
+        </div>
+
+        <div id="dates" class="bordered">
+
+            @if($dates)
+                <ul>
+                    @foreach($dates as $date)
+                        <li>{{$date}}</li>
+                    @endforeach
+                </ul>
+            @else
+                <p>No dates yet, add dates now.</p>
+            @endif
+
         </div>
 
         <div class="bordered">
-            <h3 class="flex-center">Vue.js Component</h3>
-            <h4 class="flex-center">Write Something Below This Headline</h4>
-            <div id="writeToDiv" class="flex-center bordered">
-                <h1>@{{ msg }}</h1>
-            </div>
+            <p>Vanilla PHP Test</p>
+            <?php
+                $testDate = 'yup I am a test';
+            ?>
+            <p>This is a test -> {{$testDate}}</p>
+            <br>
         </div>
 
-        <div id="app"></div>
-
-        <div class="flex-center position-ref full-height">
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
     </body>
 </html>
